@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#navbar-name{
+    font-size: 15px;
+    padding-left: 5%;
+    font-weight: 540;
+    font-family:inherit;
+}
+.navbar-nav li{
+    font-size: 15px;
+    padding: 12px;
+    font-weight: 540;
+    font-family:inherit;
+}
+
+.home{
+    height: 750px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TEMP */
+.home-title div{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* TEMP END*/
