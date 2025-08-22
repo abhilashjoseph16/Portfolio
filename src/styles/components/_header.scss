@@ -1,0 +1,76 @@
+.portfolio-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 56px;
+  background: rgb(5,0,118);
+  background: -moz-linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
+  background: linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
+  .portfolio_title {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 100px;
+    background: -webkit-linear-gradient(#3b82f6, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media screen and (max-width: 767px) {
+        padding-left: 30px;
+    }
+  }
+
+  .portfolio_nav-links {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    list-style: none;
+    padding-right: 100px;
+    li {
+      margin-left: 2.5rem;
+      a {
+        font-size: 14px;
+        color: #d1d5dcb4;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 40px;
+      background-color: rgba(39, 39, 63, 0.859);
+      flex-direction: column;
+      width: 100%;
+      left: auto;
+      padding: 0px;
+      right: 0;
+      display: none;
+      &.active {
+        display: flex;
+      }
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .header-menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding-top: 5px;
+    img {
+      height: 15px;
+      width: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      display: block;
+      padding-right: 20px;
+    }
+  }
+}

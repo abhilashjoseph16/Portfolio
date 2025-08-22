@@ -1,0 +1,10 @@
+@use "./components/header";
+@use "./components/home";
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family:'Inter', 'Poppins', 'Space Grotesk', sans-serif;
+}
