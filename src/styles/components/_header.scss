@@ -6,10 +6,25 @@
   top: 0;
   z-index: 1000;
   height: 56px;
-  background: rgb(5,0,118);
-  background: -moz-linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
-  background: -webkit-linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
-  background: linear-gradient(45deg, rgb(5,0,118) 0%, rgb(21,23,47) 50%, rgb(21,23,47) 100%);
+  background: rgb(5, 0, 118);
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(5, 0, 118) 0%,
+    rgb(21, 23, 47) 50%,
+    rgb(21, 23, 47) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(5, 0, 118) 0%,
+    rgb(21, 23, 47) 50%,
+    rgb(21, 23, 47) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgb(5, 0, 118) 0%,
+    rgb(21, 23, 47) 50%,
+    rgb(21, 23, 47) 100%
+  );
   .portfolio_title {
     font-size: 16px;
     font-weight: 700;
@@ -18,7 +33,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media screen and (max-width: 767px) {
-        padding-left: 30px;
+      padding-left: 30px;
     }
   }
 
@@ -35,9 +50,14 @@
         color: #d1d5dcb4;
         font-weight: 600;
         text-decoration: none;
-        transition: color 0.3s ease;
+        transition: color 0.5s ease;
         &:hover {
           color: white;
+        }
+        &:active,
+        &:focus,
+        &:visited {
+          color: #d1d5dcb4;
         }
       }
     }
