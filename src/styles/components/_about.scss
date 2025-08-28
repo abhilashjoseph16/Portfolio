@@ -21,6 +21,10 @@
       border-radius: 50%;
       overflow: hidden;
       animation: glow 2s infinite ease-in-out;
+      @media screen and (max-width: 768px) {
+        height: 200px;
+        width: 200px;
+      }
 
       @keyframes glow {
         0% {
