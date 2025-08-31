@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
       <section id="techstack">
         <TechStack/>
+      </section>
+
+      <section id="projects">
+        <Projects/>
       </section>
       
     </div>

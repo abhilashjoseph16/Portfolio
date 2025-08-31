@@ -1,0 +1,82 @@
+[
+    {
+        "title":"Blog App",
+        "description":" full-stack blog platform with authentication",
+        "image":"/projects/blog-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/blog-app",
+        "technologies":["Next.js","HTML","CSS","JavaScript","Sass","Git"],
+        "category":"Full Stack"
+    },
+    {
+        "title":"Google",
+        "description":"A Frontend Clone project of google search",
+        "image":"/projects/google-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/google",
+        "technologies":["React.js","HTML","CSS","JavaScript","Sass","Git"],
+        "category":"Frontend"
+    },
+    {
+        "title":"Swiggy Clone",
+        "description":"A Frontend Clone project of Swiggy",
+        "image":"/projects/swiggy-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/swiggy",
+        "technologies":["React.js","HTML","CSS","JavaScript","Git"],
+        "category":"Frontend"
+    },
+    {
+        "title":"Brainwave Frontend",
+        "description":"A Frontend project of Brainwave",
+        "image":"/projects/brainwave-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/brainwave-frontend",
+        "technologies":["React.js","HTML","CSS","JavaScript","TailwindCSS","Git","GitHub"],
+        "category":"Frontend"
+    },
+    {
+        "title":"E-Commerce Microservice",
+        "description":"A Backend project of E-Commerce Microservice with Java and Springboot",
+        "image":"/projects/ecommerce-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/E-Commerce-Microservice",
+        "technologies":["Java","Springboot","Docker","MongoDB","PostgreSQL","Git","GitHub"],
+        "category":"Backend"
+    },
+    {
+        "title":"Netflix Clone",
+        "description":"A Frontend Clone project of Netflix",
+        "image":"/projects/netflix-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/Netflix-ReactJS",
+        "technologies":["React.js","HTML","CSS","JavaScript","Git","GitHub"],
+        "category":"Frontend"
+    },
+    {
+        "title":"To Do List",
+        "description":"A Frontend project of To Do List with React.js",
+        "image":"/projects/todoList-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/ToDoList-ReactJS",
+        "technologies":["React.js","HTML","CSS","JavaScript","Git","GitHub"],
+        "category":"Frontend"
+    },
+    {
+        "title":"Chatbot Project",
+        "description":"A Chatbot Project using Django Framework",
+        "image":"/projects/chatbot-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/Chatbot-Project",
+        "technologies":["Python","Django","HTML","Git","GitHub"],
+        "category":"Backend"
+    },
+    {
+        "title":"CRM Project",
+        "description":"A CRM Project using Django Framework",
+        "image":"/projects/crm-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/CRM-Project",
+        "technologies":["Python","Django","HTML","Git","GitHub"],
+        "category":"Full Stack"
+    },
+    {
+        "title":"Login App Project",
+        "description":"A Login App Project using Django Framework",
+        "image":"/projects/login-project.jpg",
+        "link":"https://github.com/abhilashjoseph16/login-app",
+        "technologies":["Python","Django","HTML","CSS","JavaScript","Git","GitHub"],
+        "category":"Full Stack"
+    }
+]
