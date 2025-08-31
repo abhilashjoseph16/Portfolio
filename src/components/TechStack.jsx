@@ -1,5 +1,8 @@
 import React from "react";
 import technologies from "../data/technologies.json";
+import frontendImage from "../assets/icons/frontend.png";
+import backendImage from "../assets/icons/backend.png";
+import toolsImage from "../assets/icons/tools.png";
 
 function TechStack() {
   return (
@@ -19,19 +22,19 @@ function TechStack() {
       </div>
       <div className="techstack-skill-container">
         <div className="techstack-skill_box">
-            <img/>
-            <h2>Frontend</h2>
-            <p>React,HTML,CSS,JavaScript,Next.js,TailwindCSS,Sass</p>
+          <img src={frontendImage} alt="Frontend" />
+          <h2>Frontend</h2>
+          <p>React, HTML, CSS, JavaScript, Next.js, TailwindCSS, Sass</p>
         </div>
         <div className="techstack-skill_box">
-            <img/>
-            <h2>Frontend</h2>
-            <p>React,HTML,CSS,JavaScript,Next.js,TailwindCSS,Sass</p>
+          <img src={backendImage} alt="Backend" />
+          <h2>Backend</h2>
+          <p>Node.js, Express.js, MongoDB, PostgreSQL, Java</p>
         </div>
         <div className="techstack-skill_box">
-            <img/>
-            <h2>Frontend</h2>
-            <p>React,HTML,CSS,JavaScript,Next.js,TailwindCSS,Sass</p>
+          <img src={toolsImage} alt="Tools" />
+          <h2>Tools & Productivity</h2>
+          <p>Git, GitHub, Postman, Jenkins, VS Code</p>
         </div>
       </div>
     </div>
