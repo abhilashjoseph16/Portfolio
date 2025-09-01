@@ -6,6 +6,7 @@
 @use "./components/contact";
 @use "./components/alert";
 @use "./components/footer";
+@use "./app";
 
 html{
     scroll-behavior: smooth;
