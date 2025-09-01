@@ -2,6 +2,19 @@ import React from "react";
 import aboutImage from "../assets/developer-image.jpg";
 
 function About() {
+  function handleResumeDownload() {
+    fetch("/AbhilashJosephResume.pdf")
+      .then((res) => res.blob())
+      .then((blob) => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "AbhilashJosephResume.pdf";
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+  }
+
   return (
     <div className="portfolio-about-main-container">
       <div className="about-icon-container">
@@ -46,7 +59,7 @@ function About() {
           </div>
         </div>
         <div className="about-section-resume-button_container">
-          <button>Download Resume</button>
+          <button onClick={handleResumeDownload}>Download Resume</button>
         </div>
       </div>
     </div>
