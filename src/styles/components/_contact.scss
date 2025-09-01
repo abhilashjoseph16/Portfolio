@@ -105,6 +105,7 @@
       }
 
       .contact-social-media {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         .contact-social-media-title {
@@ -115,25 +116,25 @@
           }
         }
         .contact-social-media-icon_box {
-          margin-top: -4px;
+          margin-top: -1px;
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 15px;
           .social-media-icon {
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 8px;
-            padding: 6px;
-            height: 20px;
-            width: 20px;
+            padding: 8px;
+            height: 25px;
+            width: 25px;
             background-color: #191919;
             -webkit-box-shadow: 0px 0px 6px 1px #58585a;
             box-shadow: 0px 0px 6px 1px #58585a;
             cursor: pointer;
             img {
-              height: 19px;
-              width: 19px;
+              height: 22px;
+              width: 22px;
               transition: transform 0.2s ease-in-out;
             }
             &:hover {
