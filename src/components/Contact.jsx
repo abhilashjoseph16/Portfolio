@@ -19,7 +19,7 @@ function Contact() {
       message: e.target.message.value,
     };
     try {
-      const response = await fetch(API_URL, {
+      await fetch(API_URL, {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
