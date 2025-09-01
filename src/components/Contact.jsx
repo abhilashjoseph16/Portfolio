@@ -25,10 +25,7 @@ function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      if (!response.ok) {
-        throw new Error("Failed to send message");
-      }
-
+      
       setAlert({ message: "Message sent successfully!", type: "success" });
       e.target.reset();
     } catch (error) {
