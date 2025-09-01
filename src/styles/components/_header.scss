@@ -6,25 +6,7 @@
   top: 0;
   z-index: 1000;
   height: 56px;
-  background: rgb(5, 0, 118);
-  background: -moz-linear-gradient(
-    45deg,
-    rgb(5, 0, 118) 0%,
-    rgb(21, 23, 47) 50%,
-    rgb(21, 23, 47) 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(5, 0, 118) 0%,
-    rgb(21, 23, 47) 50%,
-    rgb(21, 23, 47) 100%
-  );
-  background: linear-gradient(
-    45deg,
-    rgb(5, 0, 118) 0%,
-    rgb(21, 23, 47) 50%,
-    rgb(21, 23, 47) 100%
-  );
+  background: linear-gradient(45deg, #1e1e2f 0%, #23243a 50%, #1b1c2e 100%);
   .portfolio_title {
     font-size: 16px;
     font-weight: 700;
