@@ -1,13 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import emailImage from "../assets/icons/email.png";
 import phoneImage from "../assets/icons/phone.png";
 import locationImage from "../assets/icons/location.png";
 import githubImage from "../assets/icons/github.png";
 import linkedinImage from "../assets/icons/linkedin.png";
+import messageIcon from "../assets/icons/message.png";
+import Alert from "./Alert";
+import { API_URL } from "../util/config";
 
 function Contact() {
+  const [alert, setAlert] = useState({ message: "", type: "" });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setAlert({ message: "Message sent successfully!", type: "success" });
+      e.target.reset();
+    } catch (error) {
+      setAlert({ message: "Failed to send message.", type: "error" });
+    } finally {
+      setTimeout(() => setAlert({ message: "", type: "" }), 4000);
+    }
+  };
+
   return (
     <div className="portfolio-contact-main-container">
+      <Alert
+        message={alert.message}
+        type={alert.type}
+        onClose={() => setAlert({ message: "", type: "" })}
+      />
       <div className="portfolio-contact-title-container">
         <h1>Get in Touch</h1>
         <div className="contact-title-underline"></div>
@@ -69,7 +106,7 @@ function Contact() {
           </div>
         </div>
         <div className="contact-message-box">
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -105,7 +142,6 @@ function Contact() {
             <div className="form-group-message">
               <label htmlFor="message">Message</label>
               <textarea
-                type="text"
                 id="message"
                 name="message"
                 placeholder="Your message"
@@ -113,7 +149,10 @@ function Contact() {
               ></textarea>
             </div>
             <div className="contact-form-button_box">
-              <button type="submit">Send Message</button>
+              <button type="submit">
+                <img src={messageIcon} alt="" />
+                Send Message
+              </button>
             </div>
           </form>
         </div>
