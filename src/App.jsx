@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -15,17 +16,20 @@ function App() {
       </section>
 
       <section id="about">
-        <About/>
+        <About />
       </section>
 
       <section id="techstack">
-        <TechStack/>
+        <TechStack />
       </section>
 
       <section id="projects">
-        <Projects/>
+        <Projects />
       </section>
-      
+
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }
